@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    </head>
+    <body>
+
+        <!--Pop up Prompt-->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h2>Siapa namamu?</h2>
+                <input type="text" id="nameInput" placeholder="Masukkan namamu">
+                <button onclick="submitName()">Submit</button>
+            </div>
+        </div>
+        
+        <!--Ini header nav-->
+        <header>
+            <nav class="navbar sticky">
+                <a href="#" class="logo-icon"><img src="assets/logo.png"></a>
+                <div class="toggle-menu" id="toggle-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul class="navbar-nav" id="navbar-nav">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Our Profiles</a></li>
+                    <li><a href="#" class="nav-link">Portofolio</a></li>
+                    <li><a href="#" class="nav-link">Message Us</a></li>
+                </ul>
+            </nav>
+         
+        <hr>
+
+        <!--Ini home content-->
+        <main>
+            <section class="home">
+                <header>
+                    <div class="welcomeMessage" id="welcomeMessage"></div>
+                </header>
+                <article>
+
+                    <!--banner slide-->
+                    <div class="slide-container">
+                        <div class="slides">
+                            
+                            <!--radio button untuk slides-->
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
+                            <input type="radio" name="radio-btn" id="radio5">
+                            
+                            <!--Ini slides-->
+                            <div class="slide-img pertama">
+                                <img src="assets/banner-1.jpg" alt="">
+                            </div>
+                            <div class="slide-img">
+                                <img src="assets/banner-2.jpg" alt="">
+                            </div>
+                            <div class="slide-img">
+                                <img src="assets/banner-3.jpg" alt="">
+                            </div>
+                            <div class="slide-img">
+                                <img src="assets/banner-4.jpg" alt="">
+                            </div>
+                            <div class="slide-img">
+                                <img src="assets/banner-5.jpg" alt="">
+                            </div>
+
+                            <!--Navigasi otomatis-->
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                                <div class="auto-btn4"></div>
+                                <div class="auto-btn5"></div>
+                            </div>
+                        </div>
+                        
+                        <!--Navigasi manual-->
+                        <div class="navigation-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                            <label for="radio5" class="manual-btn"></label>
+                        </div>
+
+                    </div>
+                </article>
+            </section>
+
+            <hr>
+            <!--Ini Our Profiles-->
+            <section class="our-profiles">
+                <header>
+                    <h1>Our Profiles</h1>
+                </header>
+                <div class="profiles profile-1">
+                    <div class="profile-items">
+                        <table>
+                            <tr>
+                                <td class="data">Perusahaan</td>
+                                <td class="value">:ADOR (All Doors One Room)</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Pendiri</td>
+                                <td class="value">:Min Hee-jin / 민희진</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Tahun Berdiri</td>
+                                <td class="value">:2021</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Lokasi</td>
+                                <td class="value">:Seoul, Korea Selatan</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Visi</td>
+                                <td class="value">:Menjadi pelopor dalam inovasi musik dan hiburan, menghubungkan budaya melalui kreativitas tanpa batas.</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Misi</td>
+                                <td class="value">:Menyediakan platform bagi seniman untuk berekspresi secara autentik dan mendukung pertumbuhan dan perkembangan mereka dalam industri musik global.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+        
+                <div class="profiles profile-2">
+                    <div class="profile-items">
+                        <table>
+                            <tr>
+                                <td class="data">Sejarah Singkat</td>
+                                <td class="value">:ADOR didirikan oleh Min Hee-jin, mantan direktur kreatif SM Entertainment yang terkenal dengan kontribusinya pada branding dan konsep visual grup-grup terkenal seperti Girls' Generation, EXO, dan Red Velvet. Dengan pengalaman yang luas dalam industri K-pop, Min Hee-jin membawa visi inovatif ke ADOR, berfokus pada pendekatan kreatif dan autentik dalam pengembangan artis. Sejak didirikan, ADOR telah menempatkan dirinya sebagai agen yang berkomitmen pada kualitas dan orisinalitas.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+        
+                <div class="profiles profile-3">
+                    <div class="profile-items">
+                        <table>
+                            <tr>
+                                <td class="data" style="font-size: larger;">Tim Manajemen</td>
+                                <td class="value"></td>
+                            </tr>
+                            <tr>
+                                <td class="data">Min Hee-jin</td>
+                                <td class="value">:CEO dan Direktur Kreatif. Dikenal karena visinya yang inovatif dan kemampuannya dalam menciptakan konsep visual yang kuat dan berkesan.</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Tim Produksi dan Pengembangan Artis</td>
+                                <td class="value">:Terdiri dari berbagai profesional di bidang musik, tari, desain visual, dan manajemen artis. Tim ini bekerja secara kolaboratif untuk mengembangkan dan mendukung artis di bawah naungan ADOR.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+        
+                <div class="profiles profile-4">
+                    <div class="profile-items">
+                        <table>
+                            <tr>
+                                <td class="data" style="font-size: larger;">Layanan yang Ditawarkan</td>
+                                <td class="value"></td>
+                            </tr>
+                            <tr>
+                                <td class="data">Pengembangan Artis</td>
+                                <td class="value">:Meliputi pelatihan vokal, tari, dan performa.</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Produksi Musik</td>
+                                <td class="value">:Pembuatan lagu, aransemen, dan rekaman</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Manajemen Karir</td>
+                                <td class="value">:Perencanaan karir, manajemen media sosial, dan pengaturan jadwal.</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Kreatif dan Visual</td>
+                                <td class="value">:Desain konsep visual, pembuatan video musik, dan branding artis.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+        
+                <div class="profiles profile-5">
+                    <div class="profile-items">
+                        <table>
+                            <tr>
+                                <td class="data" style="font-size: larger;">Kontak</td>
+                                <td class="value"></td>
+                            </tr>
+                            <tr>
+                                <td class="data">Alamat</td>
+                                <td class="value">:Seoul, Korea Selatan</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Email</td>
+                                <td class="value">:contact@ador.com</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Telepon</td>
+                                <td class="value">:+82-2-0000-0000</td>
+                            </tr>
+                            <tr>
+                                <td class="data">Media Sosial</td>
+                                <td class="value">:Instagram, Twitter, Facebook (@adorofficial)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            
+            <hr>
+
+            <!--Ini Portofolio-->
+            <section class="portofolio">
+                <header>
+                    <h1>Portofolio</h1>
+                </header>
+                <div class="slider">
+
+                    <div class="list">
+                        <div class="item">
+                            <img src="assets/banner-1.jpg">
+    
+                            <div class="content">
+                                <div class="title">Artis & Group</div>
+                                <div class="type">NewJeans</div>
+                                <div class="description">
+                                    NewJeans: Grup K-pop pertama yang debut di bawah ADOR. Mereka dikenal dengan musik yang fresh dan konsep visual yang unik. Setiap anggota grup memiliki karakteristik dan bakat unik yang menambah kekuatan grup secara keseluruhan.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/banner-2.jpg">
+    
+                            <div class="content">
+                                <div class="title">Proyek & Pencapaian</div>
+                                <div class="type">NewJeans Debut (2022)</div>
+                                <div class="description">
+                                    NewJeans Debut (2022):Album: "New Jeans"Hits: "Attention," "Hype Boy"Pencapaian: Album debut yang sukses, masuk ke chart Billboard, dan mendapatkan berbagai penghargaan rookie. "Attention" menjadi viral di platform media sosial dan streaming, menempatkan NewJeans sebagai salah satu grup rookie yang paling menjanjikan di industri.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/banner-3.jpg">
+    
+                            <div class="content">
+                                <div class="title">Proyek & Pencapaian</div>
+                                <div class="type">Kolaborasi & Kampanya</div>
+                                <div class="description">
+                                    ADOR sering berkolaborasi dengan brand dan artis lain untuk kampanye iklan dan proyek khusus. Misalnya, kolaborasi dengan brand fashion ternama untuk pemotretan eksklusif yang menampilkan artis-artis mereka.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/banner-4.jpg">
+    
+                            <div class="content">
+                                <div class="title">Proyek & Pencapaian</div>
+                                <div class="type">Pengembangan Konten Digital</div>
+                                <div class="description">
+                                    Selain musik, ADOR juga berfokus pada produksi konten digital yang engaging seperti vlog, dokumenter, dan behind-the-scenes untuk mendekatkan penggemar dengan artis mereka.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/banner-5.jpg">
+    
+                            <div class="content">
+                                <div class="title">Penghargaan</div>
+                                <div class="type">Penghargaan Kreatif</div>
+                                <div class="description">
+                                    ADOR juga menerima pengakuan untuk inovasi dalam konsep visual dan kreatif melalui penghargaan di industri periklanan dan desain.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/banner-1.jpg">
+    
+                            <div class="content">
+                                <div class="title">Penghargaan</div>
+                                <div class="type">Melon Music Awards (MMA) 2023</div>
+                                <div class="description">
+                                    NewJeans: Grup K-pop pertama yang debut di bawah ADOR. Mereka dikenal dengan musik yang fresh dan konsep visual yang unik.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/banner-2.jpg">
+    
+                            <div class="content">
+                                <div class="title">Golden Disc Awards (GDA) 2024</div>
+                                <div class="type">NewJeans</div>
+                                <div class="description">
+                                    NewJeans: Grup K-pop pertama yang debut di bawah ADOR. Mereka dikenal dengan musik yang fresh dan konsep visual yang unik.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/banner-3.jpg">
+    
+                            <div class="content">
+                                <div class="title">Proyek Masa Depan</div>
+                                <div class="type">Ekspansi global</div>
+                                <div class="description">
+                                    Ekspansi Global: ADOR sedang dalam proses mengembangkan grup dan artis baru yang akan membawa inovasi lebih lanjut dalam industri K-pop. Rencana ekspansi global melalui kolaborasi internasional dan promosi artis ke pasar luar negeri. Misalnya, tur internasional dan partisipasi dalam acara musik global.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/banner-4.jpg">
+    
+                            <div class="content">
+                                <div class="title">Proyek Masa Depan</div>
+                                <div class="type">Komunitas dan interaksi Penggemar</div>
+                                <div class="description">
+                                    Meluncurkan platform komunitas online eksklusif untuk penggemar yang memungkinkan interaksi lebih dekat dengan artis, akses ke konten eksklusif, dan partisipasi dalam acara khusus.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="thumbnail">
+                        <div class="item">
+                            <img src="assets/banner-1.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="assets/banner-2.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="assets/banner-3.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="assets/banner-4.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="assets/banner-5.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="assets/banner-1.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="assets/banner-2.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="assets/banner-3.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="assets/banner-4.jpg">
+                        </div>
+                    </div>
+
+                    <div class="nextprevarrows">
+                        <button class="prev"><</button>
+                        <button class="next">></button>
+                    </div>
+                </div>
+                
+            </section>
+            <hr>
+
+            <!--Ini Message Us-->
+
+            <section class="message-us">
+                <header>
+                    <h1 class="title">Message Us</h1>
+                </header>
+                <div class="message-box">
+                    <div class="input">
+                        <form name="message-form" onsubmit="return validateForm()">
+                            <label for="full-name">Nama:</label>
+                            <input placeholder="Nama" type="text" name="full-name" id="full-name"><br>
+
+                            <label for="birth-date">Tanggal Lahir:</label>
+                            <input type="date" name="birth-date" id="birth-date"><br>
+
+                            <label>Jenis Kelamin:</label>
+                            <div class="radio-group">
+                                <input type="radio" id="laki-laki" name="gender" value="Laki-laki" />
+                                <label for="laki-laki">Laki-laki</label>
+                                <input type="radio" id="perempuan" name="gender" value="Perempuan" />
+                                <label for="perempuan">Perempuan</label>
+                            </div>
+
+                            <label for="messages">Pesan:</label>
+                            <textarea placeholder="Pesan" name="messages" id="messages"></textarea><br>
+
+                            <input class="submit-btn" type="submit" value="kirim">
+                        </form>
+                    </div>
+                    <div class="output">
+                        
+                        <p class="description">Current time :<span id="sender-sent-time"></span></p><br>
+                        <p class="description">Nama :<span id="sender-full-name"></spanid></p>
+                        <p class="description">Tanggal lahir :<span id="sender-birth-date"></span></p>
+                        <p class="description">Jenis kelamin :<span id="sender-gender"></span></p>
+                        <p  class="description">Pesan :<span id="sender-messages"></span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!--Ini footer-->
+            <footer class="footer">
+                <div class="footer-content">
+                    <p class="creator">Created by: M. Amrrizal Nuril Abdi</p>
+                </div>
+            </footer>
+
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>
